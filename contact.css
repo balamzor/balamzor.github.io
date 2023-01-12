@@ -1,0 +1,71 @@
+html{
+    background: linear-gradient(black, grey);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    
+}
+
+/*html {
+    background: black;
+}*/
+
+hr {
+    color: white;
+    size: 3px;
+    width: 750px;
+}
+
+img.imgtwitter,
+img.imgmasto,
+img.imgmail {
+    opacity: 100%;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+}
+
+img.imglogo {
+    display: block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    width: 250px;
+    height: 250px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    place-items: center;
+}
+
+.logo {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+.twitter {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.mastodon {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.mail {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}

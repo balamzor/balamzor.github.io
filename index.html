@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+ 
+<head>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <!--<script type="text/javascript" src="buttonscript.js"></script>-->
+    <link href="style.css" rel="stylesheet">
+    <title>Homepage</title> 
+</head>
+ 
+<body>
+    <body>
+        <!--Memnu déroulant-->
+        <div class="menusucre">
+            <button class="button" id="recette1">
+                Pancakes
+            </button>
+            <button class="button" id="recette2">
+                Mugcake
+            </button>
+            <button class="button" id="recette3">
+                Crumble
+            </button>
+        </div><br>
+
+        
+        <div class="menusale">
+            <button class="button button2" id="sale1">
+                Pâtes à la carbonara "originales" revisitées
+            </button>
+        </div>
+
+        <!--Ici les recettes sont affichées-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="recetteo" id="recetteo"></div>
+
+
+        <script>
+                 $(document).ready(function(){
+                    $('.button').click(function(e){
+                        e.preventDefault();
+                        var buttonId = $(this).attr('id');
+                        $('#recetteo').load(buttonId + '.html');
+                    });
+                });
+
+        </script>
+</body>
+ <footer>
+    <div class="menusucre">
+        <button class="button button2" id="contact">
+            Contact
+        </button>
+    </div>
+ </footer>
+</html>
