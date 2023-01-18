@@ -122,7 +122,7 @@ h3 {
   width: 0px;
   top: -23px;
   left: 2px;
-  animation: grow-css 1.5s forwards;
+  animation: grow-css 2.5s forwards;
 }
 .js > .bar-grow {
   position: relative;
@@ -131,7 +131,7 @@ h3 {
   width: 0px;
   top: -23px;
   left: 2px;
-  animation: grow-js 1.5s forwards;
+  animation: grow-js 2.5s forwards;
 }
 .react > .bar-grow {
   position: relative;
@@ -140,7 +140,7 @@ h3 {
   width: 0px;
   top: -23px;
   left: 2px;
-  animation: grow-react 1.5s forwards;
+  animation: grow-react 2.5s forwards;
 }
 .general {
   position: absolute;
@@ -173,12 +173,12 @@ h3 {
 .viticulture {
   border: 2px solid rgb(133, 120, 160);
   padding: 10px 0;
-  /*margin: 10px 0;*/
+  margin: 10px 0;
 }
 .restauration {
   border: 2px solid rgb(133, 120, 160);
   padding: 10px 0;
-  /*margin: 10px 0;*/
+  margin: 10px 0;
 }
 
 /* RESPONSIVE */
@@ -191,6 +191,7 @@ h3 {
   }
   .general {
     left: 73%;
+    right: 0;
   }
 }
 
