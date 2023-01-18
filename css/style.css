@@ -17,10 +17,11 @@ div.header-container {
   position: absolute;
   display: flex;
   height: 250px;
-  width: 750px;
+  /* width: 750px; */
   margin: 20px 50px;
-  left: 30%;
-  right: 30%;
+  left: 10%;
+  right: 10%;
+  justify-content: center;
 }
 .header-titre {
   background: none;
@@ -74,12 +75,23 @@ h3 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-.skills {
+.bottom {
   position: absolute;
+  display: flex;
+  top: 350px;
+  left: 10%;
+  right: 10%;
+  justify-content: center;
+  /* width: 900px; */
+}
+.skills {
+  position: relative;
+  display: block;
   width: 300px;
   height: fit-content;
-  top: 350px;
-  left: 30%;
+  margin: 0 50px;
+  /* top: 350px;
+  left: 30%; */
 }
 .html {
   position: relative;
@@ -112,7 +124,10 @@ h3 {
 }
 .skill-content {
   position: relative;
+  display: block;
+  hyphens: auto;
   text-align: justify;
+  width: inherit;
   top: -30px;
 }
 .css > .bar-grow {
@@ -143,10 +158,11 @@ h3 {
   animation: grow-react 2.5s forwards;
 }
 .general {
-  position: absolute;
+  position: relative;
+  display: block;
   width: 450px;
-  top: 350px;
-  left: 50%;
+  /* top: 350px;
+  left: 50%; */
   padding: 0 10px;
 }
 .titre-gen {
@@ -182,16 +198,11 @@ h3 {
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 1500px) {
-  div.header-container {
-    left: 5%;
-  }
-  .skills {
-    left: 5%;
-  }
-  .general {
-    left: 73%;
-    right: 0;
+@media screen and (max-width: 1010px) {
+  .bottom {
+    display: flow-root;
+    left: 20%;
+    right: 20%;
   }
 }
 
