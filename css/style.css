@@ -1,0 +1,230 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+* {
+  font-family: Sofia Sans; font-size: 1em;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(33, 30, 39);
+  color: rgb(187, 187, 187);
+}
+body {
+  box-sizing: border-box;
+  background: rgb(33, 30, 39);
+  color: rgb(187, 187, 187);
+}
+div.header-container {
+  position: absolute;
+  display: flex;
+  height: 250px;
+  width: 750px;
+  margin: 20px 50px;
+  left: 30%;
+  right: 30%;
+}
+.header-titre {
+  background: none;
+  position: relative;
+  top: 30px;
+  left: -25px;
+  text-align: center;
+}
+.box-contact i {
+  position: absolute;
+  font-size: 30px;
+  text-align: justify;
+  transition: all 0.4s;
+  bottom: 0;
+}
+.contact i:hover {
+  font-size: 40px;
+  color: rgb(95, 86, 112);
+}
+.box-contact {
+  width: 120px;
+  margin-left: 30px;
+}
+.contact {
+  display: flex;
+  margin: 50px 0px;
+}
+.img {
+  background: rgb(33, 30, 39);
+  border: 4px solid rgb(117, 107, 138);
+  border-radius: 20px;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 3px 3px 15px rgb(133, 120, 160);
+}
+.img img {
+  width: 250px;
+  border-radius: 20px;
+  filter: grayscale(100%);
+}
+.infos {
+  margin: 10px 30px;
+  font-weight: bold;
+}
+h1, h2 {
+  font-weight: bold;
+  background: none;
+}
+h3 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.skills {
+  position: absolute;
+  width: 300px;
+  height: fit-content;
+  top: 350px;
+  left: 30%;
+}
+.html {
+  position: relative;
+}
+.html > .bar-grow {
+  position: relative;
+  background: rgb(33, 30, 39);
+  height: 21px;
+  width: 0px;
+  top: -23px;
+  left: 2px;
+  animation: grow-html 1.5s forwards;
+}
+.bar-bg {
+  position: relative;
+  background: rgb(182, 182, 182);
+  border: 2px solid rgb(95, 86, 112);
+  border-radius: 2px;
+  height: 25px;
+  width: 111px;
+  box-shadow: 0px 0px 8px rgb(133, 120, 160);
+}
+.bar-txt {
+  position: relative;
+  font-weight: bold;
+  background: none;
+  color: rgb(182, 182, 182);
+  top: -46px;
+  padding-left: 5px;
+}
+.skill-content {
+  position: relative;
+  text-align: justify;
+  top: -30px;
+}
+.css > .bar-grow {
+  position: relative;
+  background: rgb(33, 30, 39);
+  height: 21px;
+  width: 0px;
+  top: -23px;
+  left: 2px;
+  animation: grow-css 1.5s forwards;
+}
+.js > .bar-grow {
+  position: relative;
+  background: rgb(33, 30, 39);
+  height: 21px;
+  width: 0px;
+  top: -23px;
+  left: 2px;
+  animation: grow-js 1.5s forwards;
+}
+.react > .bar-grow {
+  position: relative;
+  background: rgb(33, 30, 39);
+  height: 21px;
+  width: 0px;
+  top: -23px;
+  left: 2px;
+  animation: grow-react 1.5s forwards;
+}
+.general {
+  position: absolute;
+  width: 450px;
+  top: 350px;
+  left: 50%;
+  padding: 0 10px;
+}
+.titre-gen {
+  background: none;
+  position: relative;
+  font-weight: bold;
+  left: 20px;
+  margin: 10px 0;
+} 
+.content-gen {
+  position: relative;
+  background: none;
+  left: 05px;
+  width: 400px;
+  padding: 10px 10px;
+  hyphens: auto;
+  text-align: justify;
+}
+.code {
+  border: 2px solid rgb(133, 120, 160);
+  margin: 10px 0;
+  /*padding: 10px 0;*/
+}
+.viticulture {
+  border: 2px solid rgb(133, 120, 160);
+  padding: 10px 0;
+  /*margin: 10px 0;*/
+}
+.restauration {
+  border: 2px solid rgb(133, 120, 160);
+  padding: 10px 0;
+  /*margin: 10px 0;*/
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1500px) {
+  div.header-container {
+    left: 5%;
+  }
+  .skills {
+    left: 5%;
+  }
+  .general {
+    left: 73%;
+  }
+}
+
+/* KEYFRAMES POUR LES ANIMATIONS*/
+
+@keyframes grow-html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 105px;
+  }
+}
+@keyframes grow-css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 95px;
+  }
+}
+@keyframes grow-js {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85px;
+  }
+}
+@keyframes grow-react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65px;
+  }
+}
